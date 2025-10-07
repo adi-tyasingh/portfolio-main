@@ -5,10 +5,10 @@ import carcatalogImg from '@/../public/images/car-catalog.png';
 import filedriveImg from '@/../public/images/file-drive.png';
 import projectmanagementImg from '@/../public/images/project-management.png';
 import reactfoodImg from '@/../public/images/react-food.png';
-import surgeImg from '@/../public/images/surge.png';
-import portfolioImg from '@/../public/images/portfolio.png';
-import auditMasterImg from '@/../public/images/audit-master.png';
-import accountingImg from '@/../public/images/accounting.jpg';
+import puddleImg from '@/../public/images/puddle.png';
+import portfolioPageImg from '@/../public/images/portfolio-page.png';
+import eventlyImg from '@/../public/images/evently.png';
+import scrapeFlowImg from '@/../public/images/scrapeflow.png';
 import { BookIcon, BriefcaseBusinessIcon } from 'lucide-react';
 
 export const links = [
@@ -29,6 +29,10 @@ export const links = [
     id: 'experience',
   },
   {
+    name: 'Education',
+    id: 'education',
+  },
+  {
     name: 'Skills',
     id: 'skills',
   },
@@ -40,35 +44,52 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: 'Trustsoft s.r.o.',
-    location: 'Prague, Czechia',
+    title: 'Software Development Intern',
+    location: 'Oorjaa',
     description:
-      'Front-end Developer. Providing services in the field of information technology services, including administration servers, cloud services, information systems and software development.',
+      'Converted synchronous APIs to asynchronous FastAPI, handling 75% more requests under peak load. Introduced TDD workflow with automated tests, shortening development cycles by 30%. Built CI/CD pipeline using GitHub Actions + Testcontainers, cutting testing costs by over 40%.',
     icon: React.createElement(BriefcaseBusinessIcon),
-    date: 'Oct 2024 - Present',
+    date: 'May 2025 - Present',
   },
   {
-    title: 'Granton s.r.o.',
-    location: 'Prague, Czechia',
+    title: 'Software Developer Intern',
+    location: 'Vruksh Ecosystem Foundation',
     description:
-      'Front-end Developer. Delivering flawless UI/UX, Frontend Workflow, Architecture & App Development.',
+      'Developed Python and Shell scripts to automate manual tasks, cutting installation and manual work by 50%. Containerized and orchestrated 10+ services with Docker + Docker Compose. Led a 15-member team, ensuring 100% of project milestones were delivered on time.',
     icon: React.createElement(BriefcaseBusinessIcon),
-    date: 'Oct 2024 - Present',
+    date: 'Jul 2024 - Mar 2025',
   },
   {
-    title: 'WhirrCrew s.r.o.',
-    location: 'Prague, Czechia',
+    title: 'Freelancer',
+    location: 'Alignerr, Data Annotate, Scale AI',
     description:
-      'Front-end Developer. Responsible for implemntation of accessible and interactive interface. Working on various projects with AI integration.',
+        'Evaluated and enhanced LLM performance across domains including coding, software engineering, and cultural alignment. Designed and solved coding challenges, implemented feature-building tests, and assessed model capabilities using structured evaluation methods. Contributed to RLHF efforts for improving reasoning, code generation, and India-centric and image-generation model outputs.',
     icon: React.createElement(BriefcaseBusinessIcon),
-    date: 'Jun 2024 - Present',
-  },
+    date: 'Jan 2024 - Present',
+  }
+] as const;
+
+export const educationData = [
   {
-    title: 'NAU',
-    location: 'Kyiv, Ukraine',
-    description: `Bachelor's degree in Cybersecurity. The faculty of Cyber Security and Software Engineering.`,
+    title: 'BTech Computer Science and Engineering (AI & ML)',
+    location: 'Shri Ramdeobaba College of Engineering and Management, Nagpur',
+    description: `Bachelor's degree in Computer Science and Engineering with specialization in AI & ML. CGPA: 9.32/10`,
     icon: React.createElement(BookIcon),
-    date: 'Sep 2022 - Jun 2024',
+    date: '2022 - Present',
+  },
+  {
+    title: 'Higher Secondary Certificate',
+    location: 'Smt. S.B.J Junior College',
+    description: `Higher Secondary Certificate in Science with focus on Mathematics and Physics. Percentage: 80.1%`,
+    icon: React.createElement(BookIcon),
+    date: '2019 - 2021',
+  },
+  {
+    title: 'Indian Certificate of Secondary Education',
+    location: 'Podar International School, Kalyan',
+    description: `ICSE certification with specialization in Mathematics and Science. Percentage: 90.1%`,
+    icon: React.createElement(BookIcon),
+    date: '2009 - 2019',
   },
 ] as const;
 
@@ -82,35 +103,34 @@ export const images = {
 
 export const projectsData = [
   {
-    title: 'Audit Master',
-    description: `Audit Master is a platform that streamlines the process of obtaining legal expertise and resources. It automates tasks like GAP Analysis, GAP Reporting, Due Diligence & more.`,
-    tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'SCRUM Methodology'],
-    imageUrl: auditMasterImg,
-    link: 'https://auditmaster.ai/',
+    title: 'ScrapeFlow - No-code web-scraping platform',
+    description: `Built a Next.js SaaS platform to scrape both static and dynamic webpages, tested on over 1k scrape jobs. Implemented Puppeteer-based automation for content extraction and authentication, reducing manual scraping effort by ~70%.`,
+    tags: ['Next.js', 'TypeScript', 'Puppeteer', 'Supabase', 'Vercel', 'Webhooks'],
+    imageUrl: scrapeFlowImg,
+    link: 'https://github.com/adi-tyasingh',
   },
   {
-    title: 'Demo Automation of accounting documents processing',
+    title: 'Evently - Event Booking Platform',
     description:
-      'Upload any receipt or invoice (even a crumpled one from your pocket) and watch our AI accurately extract its data.',
-    tags: ['TypeScript', 'React', 'Docker', 'Next.js', 'GraphQL', 'Tailwind'],
-    imageUrl: accountingImg,
-    link: 'https://demo.grantonai.cz/',
+      'Designed a scalable event booking system with concurrency control to prevent overselling. Built APIs with FastAPI + DynamoDB, containerized with Docker, and deployed on AWS Load Balancer + Auto Scaling Group.',
+    tags: ['FastAPI', 'DynamoDB', 'Docker', 'AWS', 'Python', 'Load Testing'],
+    imageUrl:eventlyImg,
+    link: 'https://github.com/adi-tyasingh',
   },
   {
-    title: 'FileDrive',
+    title: 'Puddle - Online peer-to-peer e-commerce platform',
     description:
-      'A platform for decentralized file storage with robust user management.',
+      'Built a full-stack shopping portal using Django, Jinja templates, SQLite, and Django ORM. Containerized application with Docker and created a CD pipeline via GitHub Actions, reducing deployment time by ~60%.',
     tags: [
-      'React',
-      'TypeScript',
-      'Next.js',
-      'Convex',
-      'Clerk',
-      'Shadcn',
-      'Tailwind',
+      'Django',
+      'Python',
+      'SQLite',
+      'Docker',
+      'GitHub Actions',
+      'SOLID Principles',
     ],
-    imageUrl: filedriveImg,
-    link: 'https://github.com/bbyc4kes/file-drive',
+    imageUrl: puddleImg,
+    link: 'https://github.com/adi-tyasingh',
   },
   {
     title: 'Portfolio',
@@ -120,60 +140,37 @@ export const projectsData = [
       'TypeScript',
       'Next.js',
       'Framer Motion',
-      'Cloudinary',
-      'React Email',
-      'Tailwind',
+      'Tailwind CSS',
+      'Responsive Design',
     ],
-    imageUrl: portfolioImg,
-    link: 'https://github.com/bbyc4kes/portfolio',
-  },
-
-  {
-    title: 'Surge',
-    description:
-      'Service that allows users to build and manage their own websites with integrated payment processing.',
-    tags: [
-      'React',
-      'TypeScript',
-      'Next.js',
-      'MySQL',
-      'Clerk',
-      'Stripe Connect',
-      'Shadcn',
-      'Tailwind',
-    ],
-    imageUrl: surgeImg,
-    link: 'https://github.com/bbyc4kes/surge',
+    imageUrl: portfolioPageImg,
+    link: 'https://github.com/adi-tyasingh',
   },
 ] as const;
 
 export const skillsData = [
-  ['JavaScript', '/svgs/javascript-js.svg'],
+  ['Python', '/svgs/python.svg'],
+  ['C++', '/svgs/c++.svg'],
+  ['Java', '/svgs/java.svg'],
   ['TypeScript', '/svgs/typescript-icon.svg'],
-  ['React', '/svgs/react.svg'],
+  ['JavaScript', '/svgs/javascript-js.svg'],
   ['Next.js', '/svgs/nextjs.svg'],
-  ['Node.js', '/svgs/node-js.svg'],
-  ['Express', '/svgs/express-original.svg'],
-  ['Tailwind', '/svgs/tailwind-css.svg'],
-  ['Framer', '/svgs/framer.svg'],
-  ['Shadcn', '/svgs/shadcnui.svg'],
-  ['Headless', '/svgs/brand-headlessui.svg'],
-  ['Redux', '/svgs/redux-original.svg'],
-  ['Prisma', '/svgs/file-type-light-prisma.svg'],
-  ['MongoDB', '/svgs/mongodb-original.svg'],
-  ['PostgreSQL', '/svgs/postgresql.svg'],
-  ['MySQL', '/svgs/MySQL.svg'],
-  ['Tanstack Query', '/svgs/react-query-seeklogo.svg'],
-  ['Tanstack Table', '/svgs/db-table-svgrepo-com.svg'],
-  ['Cloudinary', '/svgs/cloudinary.svg'],
-  ['Golang', '/svgs/golang.svg'],
-  ['Docker', '/svgs/Docker.svg'],
-  ['Clerk', '/svgs/clerk.svg'],
-  ['Axios', '/svgs/axios.svg'],
+  ['React', '/svgs/react.svg'],
+  ['Django', '/svgs/django.svg'],
+  ['FastAPI', '/svgs/fastapi.svg'],
+  ['Flask', '/svgs/flask.svg'],
+  ['Tailwind CSS', '/svgs/tailwind-css.svg'],
   ['HTML', '/svgs/file-type-html.svg'],
   ['CSS', '/svgs/file-type-css.svg'],
-  ['Sass', '/svgs/Sass.svg'],
+  ['Docker', '/svgs/Docker.svg'],
+  ['AWS', '/svgs/aws.svg'],
+  ['GitHub Actions', '/svgs/github.svg'],
+  ['Jenkins', '/svgs/jenkins.svg'],
+  ['Pytest', '/svgs/pytest.svg'],
+  ['Postman', '/svgs/postman.svg'],
   ['Git', '/svgs/git.svg'],
   ['GitHub', '/svgs/github.svg'],
-  ['', '/svgs/etc.svg'],
+  ['React', '/svgs/react.svg'],
+  ['PostgreSQL', '/svgs/postgresql.svg'],
+  ['MySQL', '/svgs/MySQL.svg'],
 ] as const;

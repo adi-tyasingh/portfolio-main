@@ -45,17 +45,7 @@ export default function About() {
           <div className="antialiased group relative w-full">
             <div className="text-md relative z-40 flex flex-col gap-3 font-semibold tracking-wide text-primary lg:absolute lg:right-0 lg:top-[27%] lg:block lg:max-w-[580px] lg:text-start lg:text-lg xl:top-1/3 xl:h-[442px] xl:max-w-[650px]">
               <div className="flex h-full flex-col justify-center gap-6">
-                <span>
-                  I&apos;m Front-end developer with expertise in TypeScript,
-                  React & Next.js. Proven ability to deliver user-centered web
-                  applications with a focus on intuitive experiences and user
-                  interaction.
-                </span>
-                <span>
-                  Seeking for Web Development opportunities where I can leverage
-                  my skills to create meaningful connections between products
-                  and users.
-                </span>
+              <span> I&apos;m a computer science engineer who loves bringing ideas to life through code — from intuitive frontends to intelligent backend systems. My work often blends creativity with logic, drawing on my experience in AI, full-stack development, and software design to build products that are both scalable and meaningful. </span> <span> I enjoy exploring how technology can think, adapt, and simplify life — whether through machine learning models, clean API architectures, or automation that saves time. Driven by curiosity and craftsmanship, I see every project as an opportunity to learn, refine, and create something genuinely impactful. </span>
                 <p className="flex flex-col items-start sm:items-center lg:items-start">
                   <span>So if you are interested,</span>
                   <Link
