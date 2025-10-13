@@ -29,6 +29,7 @@ export default function About() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175, ease: 'easeInOut' }}
       id="about"
+      aria-label="About me section"
     >
       <div className="flex w-full flex-col items-center pt-8">
         <SectionHeading>About Me</SectionHeading>
@@ -64,15 +65,16 @@ export default function About() {
             </div>
             <div className="absolute z-30 hidden lg:left-0 lg:top-1/4 lg:block">
               <div className="relative h-72 w-72 lg:h-[380px] lg:w-[380px] xl:h-[470px] xl:w-[470px]">
-                <div className="absolute inset-0 z-20 rounded-full bg-gradient-to-b from-[#ffcbb4] via-[#e0afa0] to-[#e29578] transition-opacity group-hover:opacity-30" />
+                <div className="absolute inset-0 z-20 rounded-full bg-gradient-to-b from-[#ffcbb4] via-[#e0afa0] to-[#e29578] transition-opacity group-hover:opacity-30" aria-hidden="true" />
                 <div className="absolute inset-0">
                   <Image
                     src={portfolioImg}
-                    alt="portfolio image"
+                    alt="Professional photo of Aditya Pratap Singh, Full Stack Developer"
                     placeholder="blur"
                     width={470}
                     height={470}
                     className="z-10 rounded-full lg:h-[380px] lg:w-[380px] xl:h-[470px] xl:w-[470px]"
+                    priority
                   />
                 </div>
               </div>

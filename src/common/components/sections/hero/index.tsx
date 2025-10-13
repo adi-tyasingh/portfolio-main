@@ -20,11 +20,13 @@ export default function Hero() {
         className="relative flex h-screen w-full scroll-mt-36 flex-col items-center justify-center"
         id="home"
         ref={ref}
+        aria-label="Hero section - Introduction"
       >
         <div
           className={
             "absolute left-0 top-0 h-screen w-full dark:bg-[#0000007c]"
           }
+          aria-hidden="true"
         ></div>
         <video
           width="480"
@@ -35,20 +37,23 @@ export default function Hero() {
           muted
           loop
           className="absolute -z-10 h-screen w-screen object-cover"
+          aria-label="Background video showing animated patterns"
         >
-          <source src="/layout.mp4" />
+          <source src="/layout.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
         </video>
         <div className="container flex flex-col items-start justify-center tracking-wide text-black dark:text-white">
           <div className="container relative flex h-full w-full flex-col items-center">
             <div className="h-72 w-[280px] text-center text-[2rem] font-extrabold sm:w-[520px] md:w-[700px] lg:mb-5 lg:w-[920px] lg:text-[3rem]">
-              <motion.span
+              <motion.h1
                 initial={{ y: -100, x: "-50%", opacity: 0 }}
                 animate={{ y: 0, x: "-50%", opacity: 1 }}
                 className="mb-10 text-start font-extrabold"
               >
                 Hey!
-              </motion.span>
+              </motion.h1>
               <br />
+              <h2 className="sr-only">I&apos;m Aditya Pratap Singh, Full Stack Developer</h2>
               <TextAnimation delay={1} baseText={`I'm Aditya`} />
             </div>
             <motion.div
@@ -66,6 +71,8 @@ export default function Hero() {
                   setActiveSection("contact");
                   setTimeOfLastClick(Date.now());
                 }}
+                role="button"
+                aria-label="Navigate to contact section"
               >
                 <span>Contact me here</span>
               </a>
@@ -74,28 +81,33 @@ export default function Hero() {
                 className="borderBlack group flex w-64 cursor-pointer items-center justify-center gap-2 rounded-full bg-white px-7 py-3 text-black outline-none transition hover:bg-gray-100 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 sm:w-auto"
                 href="/CV_Aditya-Singh-GP.pdf"
                 download
+                aria-label="Download Aditya Pratap Singh's CV (PDF)"
               >
                 <span>Download CV</span>
               </a>
 
-              <div className="flex gap-2">
+              <div className="flex gap-2" role="navigation" aria-label="Social media links">
                 <a
                   className="borderBlack flex h-[50px] w-[50px] cursor-pointer items-center justify-center gap-2 rounded-full bg-white p-2 text-black transition hover:bg-gray-100 hover:text-gray-950 dark:bg-white/10 dark:text-white/60 dark:hover:bg-white/20"
                   href="https://www.linkedin.com/in/aditya-pratap-singh-980ab9269/"
                   target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit Aditya Pratap Singh's LinkedIn profile (opens in new tab)"
                 >
-                  <Linkedin />
+                  <Linkedin aria-hidden="true" />
                 </a>
                 <a
                   className="borderBlack flex h-[50px] w-[50px] cursor-pointer items-center justify-center gap-2 rounded-full bg-white p-2 text-gray-700 transition hover:bg-gray-100 hover:text-gray-950 dark:bg-white/10 dark:text-white/60 dark:hover:bg-white/20"
                   href="https://github.com/adi-tyasingh"
                   target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit Aditya Pratap Singh's GitHub profile (opens in new tab)"
                 >
                   <Image
                     width={25}
                     height={25}
                     src={"/svgs/github.svg"}
-                    alt="github icon"
+                    alt="GitHub icon"
                   />
                 </a>
               </div>

@@ -30,9 +30,10 @@ export default function Skills() {
       id="skills"
       ref={ref}
       className="flex w-full flex-col items-center justify-center py-24 pb-[150px] text-center dark:bg-darkBg dark:text-white sm:pb-40"
+      aria-label="Skills section"
     >
       <SectionHeading>My skills</SectionHeading>
-      <ul className="my-26 mb-[150px] flex max-w-[53rem] flex-wrap items-center justify-center gap-2 text-lg text-gray-800">
+      <ul className="my-26 mb-[150px] flex max-w-[53rem] flex-wrap items-center justify-center gap-2 text-lg text-gray-800" aria-label="List of technical skills">
         {skillsData.map((skill, index) => (
           <motion.li
             className="borderBlack flex items-center justify-center rounded-xl bg-gray-200 px-5 py-3 dark:bg-white/10 dark:text-white/80"
@@ -47,10 +48,11 @@ export default function Skills() {
           >
             <Image
               src={skill[1]}
-              alt={skill[0]}
+              alt={`${skill[0]} logo`}
               width={24}
               height={24}
               className="mr-2 inline h-6 w-6"
+              aria-hidden="true"
             />
             {skill[0]}
           </motion.li>

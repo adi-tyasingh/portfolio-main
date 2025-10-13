@@ -15,9 +15,10 @@ export default function Projects() {
       className="flex min-h-screen w-full scroll-mt-28 flex-col items-center justify-center dark:bg-darkBg dark:text-white"
       id="projects"
       ref={ref}
+      aria-label="Projects section"
     >
       <SectionHeading>Projects</SectionHeading>
-      <div className="my-24">
+      <div className="my-24" role="list" aria-label="Portfolio projects">
         {projectsData.map((project, index) => (
           <React.Fragment key={index}>
             <Project {...project} />

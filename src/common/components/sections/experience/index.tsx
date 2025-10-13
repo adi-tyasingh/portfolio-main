@@ -22,9 +22,10 @@ export default function Experience() {
       id="experience"
       ref={ref}
       className="w-full scroll-mt-20 dark:bg-darkBg dark:text-white"
+      aria-label="Experience section"
     >
       <SectionHeading>My experience</SectionHeading>
-      <VerticalTimeline animate={false}>
+      <VerticalTimeline animate={false} aria-label="Work experience timeline">
         {ihasMounted &&
           experiencesData.map((item, index) => (
             <React.Fragment key={index}>

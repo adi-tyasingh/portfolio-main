@@ -22,9 +22,10 @@ export default function Education() {
       id="education"
       ref={ref}
       className="w-full scroll-mt-20 dark:bg-darkBg dark:text-white"
+      aria-label="Education section"
     >
       <SectionHeading>My education</SectionHeading>
-      <VerticalTimeline animate={false}>
+      <VerticalTimeline animate={false} aria-label="Educational background timeline">
         {ihasMounted &&
           educationData.map((item, index) => (
             <React.Fragment key={index}>

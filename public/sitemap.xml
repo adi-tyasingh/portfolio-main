@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://aditya.techii.in/</loc>
+    <lastmod>2025-10-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://aditya.techii.in/images/photo.jpg</image:loc>
+      <image:title>Aditya Pratap Singh - Full Stack Developer</image:title>
+      <image:caption>Professional photo of Aditya Pratap Singh, Full Stack Developer</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://aditya.techii.in/images/scrapeflow.png</image:loc>
+      <image:title>ScrapeFlow - No-code web-scraping platform</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://aditya.techii.in/images/evently.png</image:loc>
+      <image:title>Evently - Event Booking Platform</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://aditya.techii.in/images/puddle.png</image:loc>
+      <image:title>Puddle - Online peer-to-peer e-commerce platform</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://aditya.techii.in/images/portfolio-page.png</image:loc>
+      <image:title>Portfolio Website</image:title>
+    </image:image>
+  </url>
+</urlset>
+

@@ -28,12 +28,13 @@ export default function Contact() {
       viewport={{
         once: true,
       }}
+      aria-label="Contact section"
     >
       <SectionHeading>Hit me up!</SectionHeading>
       <div className="w-[min(100%,38rem)] px-4">
         <p className="mb-20 mt-6 text-gray-700 dark:text-white/80">
           Please contact me directly at{" "}
-          <a className="underline" href="mailto:singhprkaditya@gmail.com">
+          <a className="underline" href="mailto:singhprkaditya@gmail.com" aria-label="Send email to singhprkaditya@gmail.com">
             singhprkaditya@gmail.com
           </a>{" "}
           or through this form.
@@ -51,21 +52,28 @@ export default function Contact() {
 
             toast.success("Email sent successfully!");
           }}
+          aria-label="Contact form"
         >
+          <label htmlFor="senderEmail" className="sr-only">Your email address</label>
           <input
+            id="senderEmail"
             className="h-14 rounded-lg border bg-gray-50 px-4 transition-all dark:bg-white dark:bg-opacity-80 dark:placeholder:text-darkBg dark:focus:bg-opacity-100"
             name="senderEmail"
             type="email"
             required
             maxLength={500}
             placeholder="Your email"
+            aria-required="true"
           />
+          <label htmlFor="message" className="sr-only">Your message</label>
           <textarea
+            id="message"
             className="my-3 h-52 resize-none rounded-lg border bg-gray-50 p-4 transition-all dark:bg-opacity-80 dark:outline-none dark:placeholder:text-darkBg dark:focus:bg-opacity-100"
             name="message"
             placeholder="Your message 👋"
             required
             maxLength={5000}
+            aria-required="true"
           />
           <div className="flex justify-center">
             <SubmitBtn />

@@ -1,9 +1,9 @@
 export default function Footer() {
   return (
-    <footer className="flex w-full flex-col items-center justify-center px-4 pb-10 text-center text-gray-500 dark:bg-darkBg">
-      <section className="max-w-[28rem]">
+    <footer className="flex w-full flex-col items-center justify-center px-4 pb-10 text-center text-gray-500 dark:bg-darkBg" role="contentinfo">
+      <div className="max-w-[28rem]">
         <small className="mb-2 block text-xs">
-          &copy; 2024 Aditya Singh. All rights reserved.
+          &copy; 2025 Aditya Pratap Singh. All rights reserved.
         </small>
         <p className="text-xs">
           <span className="font-semibold">
@@ -12,7 +12,7 @@ export default function Footer() {
           It&apos;s like adding sprinkles to the cake of life - makes everything
           more fun!
         </p>
-      </section>
+      </div>
     </footer>
   );
 }
