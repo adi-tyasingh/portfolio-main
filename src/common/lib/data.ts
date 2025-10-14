@@ -37,6 +37,10 @@ export const links = [
     id: 'skills',
   },
   {
+    name: 'Coding',
+    id: 'coding',
+  },
+  {
     name: 'Contact',
     id: 'contact',
   },

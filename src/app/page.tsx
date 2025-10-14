@@ -7,6 +7,7 @@ import Experience from "@/common/components/sections/experience";
 import Hero from "@/common/components/sections/hero";
 import Projects from "@/common/components/sections/projects";
 import Skills from "@/common/components/sections/skills";
+import CodingStats from "@/common/components/sections/coding-stats";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Experience />
       <Education />
       <Skills />
+      <CodingStats />
       <Contact />
     </main>
   );
