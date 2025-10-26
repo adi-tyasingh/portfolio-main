@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { useSectionInView } from "@/common/lib/hooks";
 import { motion } from "framer-motion";
 import SectionHeading from "@/common/components/shared/section-heading";
 import SectionDivider from "@/common/components/shared/section-divider";
@@ -32,7 +31,6 @@ const fadeInAnimationVariants = {
 };
 
 export default function CodingStats() {
-  const { ref } = useSectionInView("coding");
   const [stats, setStats] = useState<CodingStatsData | null>(null);
   const [loading, setLoading] = useState(true);
 
@@ -156,8 +154,6 @@ export default function CodingStats() {
 
   return (
     <section
-      id="coding"
-      ref={ref}
       className="flex w-full flex-col items-center justify-center py-24 pb-[150px] text-center dark:bg-darkBg dark:text-white sm:pb-40"
       aria-label="Coding statistics section"
     >
