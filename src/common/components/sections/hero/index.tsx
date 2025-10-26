@@ -57,34 +57,58 @@ export default function Hero() {
               <TextAnimation delay={1} baseText={`I'm Aditya`} />
             </div>
             <motion.div
-              className="w-92 flex flex-col items-center justify-center gap-3 px-4 text-sm font-medium md:mt-12 md:flex-row lg:text-lg"
+              className="w-92 flex flex-col items-center justify-center gap-3 px-4 text-sm font-medium md:mt-12 lg:text-lg"
               initial={{ opacity: 0, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{
                 delay: 0.1,
               }}
             >
-              <a
-                className="group flex w-64 cursor-pointer items-center justify-center gap-2 rounded-full bg-darkBg px-7 py-3 text-white outline-none transition hover:bg-lightBeige hover:text-black hover:dark:text-black sm:w-auto"
-                onClick={(e) => {
-                  smoothScrollTo({ e, id: "contact" });
-                  setActiveSection("contact");
-                  setTimeOfLastClick(Date.now());
-                }}
-                role="button"
-                aria-label="Navigate to contact section"
-              >
-                <span>Contact me here</span>
-              </a>
+              {/* First row - Contact and Download CV */}
+              <div className="flex flex-col items-center justify-center gap-3 md:flex-row">
+                <a
+                  className="group flex w-64 cursor-pointer items-center justify-center gap-2 rounded-full bg-darkBg px-7 py-3 text-white outline-none transition hover:bg-lightBeige hover:text-black hover:dark:text-black sm:w-auto"
+                  onClick={(e) => {
+                    smoothScrollTo({ e, id: "contact" });
+                    setActiveSection("contact");
+                    setTimeOfLastClick(Date.now());
+                  }}
+                  role="button"
+                  aria-label="Navigate to contact section"
+                >
+                  <span>Contact me here</span>
+                </a>
 
-              <a
-                className="borderBlack group flex w-64 cursor-pointer items-center justify-center gap-2 rounded-full bg-white px-7 py-3 text-black outline-none transition hover:bg-gray-100 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 sm:w-auto"
-                href="/CV_Aditya-Singh-GP.pdf"
-                download
-                aria-label="Download Aditya Pratap Singh's CV (PDF)"
-              >
-                <span>Download CV</span>
-              </a>
+                <a
+                  className="borderBlack group flex w-64 cursor-pointer items-center justify-center gap-2 rounded-full bg-white px-7 py-3 text-black outline-none transition hover:bg-gray-100 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 sm:w-auto"
+                  href="/CV_Aditya-Singh-GP.pdf"
+                  download
+                  aria-label="Download Aditya Pratap Singh's CV (PDF)"
+                >
+                  <span>Download CV</span>
+                </a>
+              </div>
+
+              {/* Second row - Problem Solving and Visit Blog */}
+              <div className="flex flex-col items-center justify-center gap-3 md:flex-row">
+                <a
+                  className="borderBlack group flex w-64 cursor-pointer items-center justify-center gap-2 rounded-full bg-white px-7 py-3 text-black outline-none transition hover:bg-gray-100 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 sm:w-auto"
+                  href="/problem-solving"
+                  aria-label="View Problem Solving Statistics"
+                >
+                  <span>Problem Solving</span>
+                </a>
+
+                <a
+                  className="borderBlack group flex w-64 cursor-pointer items-center justify-center gap-2 rounded-full bg-white px-7 py-3 text-black outline-none transition hover:bg-gray-100 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 sm:w-auto"
+                  href="https://blogs.techii.in"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit Aditya's Blog (opens in new tab)"
+                >
+                  <span>Checkout my blog</span>
+                </a>
+              </div>
 
               <div className="flex gap-2" role="navigation" aria-label="Social media links">
                 <a
