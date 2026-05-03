@@ -53,7 +53,7 @@ export default function Hero() {
                 Hey!
               </motion.span>
               <br />
-              <h2 className="sr-only">I&apos;m Aditya Pratap Singh, Full Stack Developer</h2>
+              <h2 className="sr-only">I&apos;m Aditya Pratap Singh, Backend Developer</h2>
               <TextAnimation delay={1} baseText={`I'm Aditya`} />
             </div>
             <motion.div

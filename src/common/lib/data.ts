@@ -45,6 +45,14 @@ export const links = [
 export const experiencesData = [
   {
     title: 'Software Development Intern',
+    location: 'Branch International',
+    description:
+      'Designed and implemented a distributed Feature Flag system with deterministic user bucketing. Utilised Kubernetes configMaps and caching to handle large request volumes with low latency. Reduced CI costs by 53% through selective test execution. Built queue-level observability for RabbitMQ and resolved over 200 N+1 queries, improving database performance.',
+    icon: React.createElement(BriefcaseBusinessIcon),
+    date: 'Jan 2026 - Present',
+  },
+  {
+    title: 'Software Development Intern',
     location: 'Oorjaa',
     description:
       'Converted synchronous APIs to asynchronous FastAPI, handling 75% more requests under peak load. Introduced TDD workflow with automated tests, shortening development cycles by 30%. Built CI/CD pipeline using GitHub Actions + Testcontainers, cutting testing costs by over 40%.',
@@ -150,29 +158,21 @@ export const projectsData = [
 
 export const skillsData = [
   ['Python', '/svgs/python.svg'],
-  ['C++', '/svgs/c++.svg'],
-  ['Java', '/svgs/java.svg'],
   ['TypeScript', '/svgs/typescript-icon.svg'],
-  ['JavaScript', '/svgs/javascript-js.svg'],
-  ['Next.js', '/svgs/nextjs.svg'],
+  ['Ruby', '/svgs/ruby.svg'],
+  ['Ruby on Rails', '/svgs/rails.svg'],
   ['React', '/svgs/react.svg'],
-  ['Django', '/svgs/django.svg'],
+  ['Next.js', '/svgs/nextjs.svg'],
   ['FastAPI', '/svgs/fastapi.svg'],
-  ['Flask', '/svgs/flask.svg'],
-  ['Tailwind CSS', '/svgs/tailwind-css.svg'],
-  ['HTML', '/svgs/file-type-html.svg'],
-  ['CSS', '/svgs/file-type-css.svg'],
+  ['Django', '/svgs/django.svg'],
+  ['PostgreSQL', '/svgs/postgresql.svg'],
   ['Docker', '/svgs/Docker.svg'],
+  ['Kubernetes', '/svgs/kubernetes.svg'],
   ['AWS', '/svgs/aws.svg'],
   ['GitHub Actions', '/svgs/github.svg'],
-  ['Jenkins', '/svgs/jenkins.svg'],
+  ['CircleCI', '/svgs/circleci.svg'],
   ['Pytest', '/svgs/pytest.svg'],
-  ['Postman', '/svgs/postman.svg'],
-  ['Git', '/svgs/git.svg'],
-  ['GitHub', '/svgs/github.svg'],
-  ['React', '/svgs/react.svg'],
-  ['PostgreSQL', '/svgs/postgresql.svg'],
-  ['MySQL', '/svgs/MySQL.svg'],
+  ['Datadog', '/svgs/datadog.svg'],
 ] as const;
 
 export const codingTopicsData = [
